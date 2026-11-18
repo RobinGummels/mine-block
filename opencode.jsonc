@@ -1,0 +1,33 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "unigpt/DeepSeek-V4-Flash",
+  "default_agent": "orchestrator",
+  "share": "disabled",
+  "providers": {
+    "unigpt": {
+      "name": "UniGPT Münster",
+      "env": ["UNIGPT_API_KEY"],
+      "package": "@opencode/ai/providers/openai-compatible",
+      "settings": {"baseURL": "https://gpt.uni-muenster.de/v1"},
+      "models": {
+        "DeepSeek-V4-Flash": {
+          "modelID": "DeepSeek-V4-Flash",
+          "name": "DeepSeek V4 Flash",
+          "capabilities": {"tools": true, "input": ["text"], "output": ["text"]},
+          "limit": {"context": 128000, "output": 8000}
+        }
+      }
+    }
+  },
+  "mcp": {
+    "servers": {
+      "context7": {
+        "type": "remote",
+        "url": "https://mcp.context7.com/mcp",
+        "oauth": false,
+        "disabled": true
+      }
+    }
+  },
+  "watcher": {"ignore": ["**/node_modules/**", "**/.venv/**", "**/.runtime/**", "**/target/**"]}
+}

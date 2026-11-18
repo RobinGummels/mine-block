@@ -1,0 +1,10 @@
+/.runtime/
+/qa/node_modules/
+/qa/test-results/
+/qa/playwright-report/
+/.setup-backup/
+/.env
+/.env.*
+*.log
+__pycache__/
+*.py[cod]

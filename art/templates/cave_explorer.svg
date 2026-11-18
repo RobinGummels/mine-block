@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768" role="img">
+  <title>Original adult cave explorer</title>
+  <ellipse cx="258" cy="726" rx="157" ry="22" fill="#0c1421" opacity=".45"/>
+  <path d="m164 521 95-13-7 172-78 8-24-93zM267 511l83 3 20 169-84 9-26-111z" fill="#263447" stroke="#111926" stroke-width="14" stroke-linejoin="round"/>
+  <path d="m154 663 104-5 4 47-20 22-115-2-9-23zM276 664l94-4 35 36-1 28-130 2-13-24z" fill="#29313c" stroke="#101723" stroke-width="15" stroke-linejoin="round"/>
+  <path d="m139 694 112 6m35 1 112-6" fill="none" stroke="#687582" stroke-width="8"/>
+  <path d="m136 281 61-29 128 5 72 46-24 229-216 27z" fill="#4e5762" stroke="#141b2a" stroke-width="16" stroke-linejoin="round"/>
+  <path d="m173 299 43 8-5 191-45 25zm113 8 65-12 11 208-74 17z" fill="#344255"/>
+  <path d="m159 306-43 20-32 151 61 26 38-139zM373 309l40 33 19 137-63 19-26-146z" fill="#465569" stroke="#141b2a" stroke-width="14" stroke-linejoin="round"/>
+  <path d="m81 471 65 20-14 48-62-19zM371 486l60-18 13 52-63 23z" fill="#9c745c" stroke="#141b2a" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M150 466q117 25 218-4l3 46q-116 36-224 6z" fill="#7f573f" stroke="#1c2531" stroke-width="11"/>
+  <path d="m208 470 65 1-4 52-59-3z" fill="#c49152" stroke="#2b2b33" stroke-width="9"/>
+  <path d="m319 472 31-5 7 53-35 5z" fill="#263447" stroke="#c49152" stroke-width="7"/>
+  <path d="m190 282 61 22 75-39 21 40-71 65-75-25z" fill="#f4b64f" stroke="#2b2b33" stroke-width="11" stroke-linejoin="round"/>
+  <path d="m271 329 34 54 2 84-25-15-40-73z" fill="#bc6c3e" stroke="#2b2b33" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M206 146q20-49 85-46 73 5 73 74l-15 82-60 55-78-35-26-80z" fill="#b7896c" stroke="#18202d" stroke-width="14" stroke-linejoin="round"/>
+  <path d="m198 206 23 53 66 25 50-29-15 39-43 25-65-27z" fill="#3b2c32" stroke="#18202d" stroke-width="8"/>
+  <path d="m228 217 19-5m54-1 20 5" stroke="#322833" stroke-width="10" stroke-linecap="round"/>
+  <path d="m246 235 11 2m51-2 11-2" stroke="#111926" stroke-width="7" stroke-linecap="round"/>
+  <path d="m279 237-9 19 18 4" fill="none" stroke="#815a4a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M172 156q18-75 96-88 91-8 111 87l-32 29-142-7z" fill="#303b49" stroke="#111926" stroke-width="16" stroke-linejoin="round"/>
+  <path d="m170 160 180 13 40-17-24 43-186-7-30-18z" fill="#465569" stroke="#111926" stroke-width="13" stroke-linejoin="round"/>
+  <path d="m235 93 37-17 43 11-4 51-73-5z" fill="#5a6973" stroke="#111926" stroke-width="10"/>
+  <path d="m249 102 51-2-4 29-49-3z" fill="#f4b64f" stroke="#fff0bb" stroke-width="7"/>
+  <path d="m106 361 33-21m259 32-30-27" stroke="#85929c" stroke-width="8" stroke-linecap="round"/>
+  <path d="m183 581 47-6m70 9 42-6" stroke="#687582" stroke-width="9" stroke-linecap="round"/>
+</svg>

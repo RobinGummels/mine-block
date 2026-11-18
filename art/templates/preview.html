@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Block Cave 3D voxel asset preview</title>
+<style>
+  body { margin: 0; padding: 28px; color: #f5f1e8; background: #151a29; font: 16px Arial, sans-serif; }
+  h1, h2 { margin: 0 0 18px; }
+  h2 { margin-top: 30px; }
+  .sheet { display: grid; grid-template-columns: repeat(6, 150px); gap: 14px; }
+  figure { margin: 0; padding: 10px; text-align: center; background: #273246; }
+  figure img { width: 120px; height: 120px; object-fit: contain; }
+  figure img[src^="ore_vein_wild_"][src$=".svg"] { image-rendering: pixelated; }
+  figcaption { font-size: 12px; }
+  .scene { position: relative; overflow: hidden; }
+  .scene > img:first-child { width: 100%; height: 100%; object-fit: cover; }
+  .board { position: absolute; display: grid; background: #0d1425e8; border: 2px solid #506078; }
+  .board img { justify-self: center; align-self: center; image-rendering: auto; }
+  .mini { width: 400px; height: 225px; }
+  .mini .board { left: 51px; top: 30px; grid-template-columns: repeat(6, 48px); grid-template-rows: repeat(5, 32px); }
+  .mini .board img { width: 32px; height: 32px; }
+  .mini .explorer { position: absolute; right: 2px; bottom: 5px; width: 54px; height: 81px; }
+  .desktop { width: 1200px; height: 675px; }
+  .desktop .board { left: 205px; top: 100px; grid-template-columns: repeat(6, 130px); grid-template-rows: repeat(5, 94px); }
+  .desktop .board img { width: 88px; height: 88px; }
+  .desktop .explorer { position: absolute; right: 10px; bottom: 25px; width: 190px; height: 285px; }
+</style>
+<h1>Block Cave · 3D voxel assets</h1>
+<div class="sheet">
+  <figure><img src="earth_3d.png"><figcaption>earth · wet grass</figcaption></figure>
+  <figure><img src="stone_3d.png"><figcaption>stone</figcaption></figure>
+  <figure><img src="timber_3d.png"><figcaption>timber · log</figcaption></figure>
+  <figure><img src="copper_ore_3d.png"><figcaption>copper ore</figcaption></figure>
+  <figure><img src="lapis_ore_3d.png"><figcaption>lapis ore</figcaption></figure>
+  <figure><img src="gold_ore_3d.png"><figcaption>gold ore</figcaption></figure>
+  <figure><img src="emerald_ore_3d.png"><figcaption>emerald ore</figcaption></figure>
+  <figure><img src="diamond_ore_3d.png"><figcaption>diamond ore</figcaption></figure>
+  <figure><img src="fantasy_alloy_ingot_3d.png"><figcaption>rare alloy block</figcaption></figure>
+  <figure><img src="ore_vein_wild_3d.png"><figcaption>WILD · cyan nexus</figcaption></figure>
+  <figure><img src="ore_vein_wild_violet.svg"><figcaption>WILD · violet rune</figcaption></figure>
+  <figure><img src="ore_vein_wild_nexus.svg"><figcaption>WILD · chromatic</figcaption></figure>
+  <figure><img src="pickaxe_scatter_3d.png"><figcaption>pickaxe scatter</figcaption></figure>
+  <figure><img src="cave_explorer_3d.png"><figcaption>3D side explorer</figcaption></figure>
+</div>
+<h2>400 × 225 mini layout</h2>
+<div class="scene mini">
+  <img src="cave_background_3d.png" alt="">
+  <div class="board"></div>
+  <img class="explorer" src="cave_explorer_3d.png" alt="">
+</div>
+<h2>1200 × 675 desktop layout</h2>
+<div class="scene desktop">
+  <img src="cave_background_3d.png" alt="">
+  <div class="board"></div>
+  <img class="explorer" src="cave_explorer_3d.png" alt="">
+</div>
+<p>Layout illustration only. The math book and frontend choose actual outcomes, sizing and animations.</p>
+<script>
+  const names = ['earth', 'stone', 'timber', 'copper_ore', 'lapis_ore', 'gold_ore',
+    'emerald_ore', 'diamond_ore', 'fantasy_alloy_ingot', 'ore_vein_wild', 'pickaxe_scatter'];
+  for (const board of document.querySelectorAll('.board')) {
+    board.innerHTML = Array.from({ length: 30 }, (_, i) =>
+      `<img src="${names[(i * 7 + Math.floor(i / 6)) % names.length]}_3d.png" alt="">`).join('');
+  }
+</script>
+</html>
